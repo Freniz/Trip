@@ -40,13 +40,23 @@ class Trip extends PHPUnit_Framework_TestCase
     }
     
     /**
-    *@group TripSorting Results
+    *@group TripSorting First Results
     */
-	public function testTripSorting()
+	public function testTripFirstSorting()
 	{
 		$boardingResults = $this->Trip->sortBoardingCards();
 		$message = 'Madrid';
 		$this->assertEquals($message, $boardingResults[0]['from']);
+	}
+
+	/**
+    *@group TripSorting Last Results
+    */
+	public function testTripLastSorting()
+	{
+		$boardingResults = $this->Trip->sortBoardingCards();
+		$message = 'New York';
+		$this->assertEquals($message, $boardingResults[3]['to']);
 	}
 
 	/**
