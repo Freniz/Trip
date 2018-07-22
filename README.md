@@ -1,5 +1,5 @@
 # Trip
-Transportation Boarding Card Sorting
+Transportation Boarding Card Sorting.
 
 #Steps
 
